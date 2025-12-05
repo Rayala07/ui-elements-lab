@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(18, 18, 18);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  color: white;
+  background-color: transparent;
+  border: 1px solid rgb(221, 56, 246);
+  border-radius: 1rem;
+  padding: 1.5rem 2.8rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  
+
+  position: relative;
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: rgba(221, 56, 246, 0.879);
+  box-shadow: 0 0 2.5rem rgb(221, 56, 246);
+  transform: scale(0.98);
+  transition: all 0.3s ease-out;
+}
+
+button:hover::before {
+  animation: shine 0.5s linear;
+}
+
+button::before {
+  content: "";
+  display: block;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  left: -50%;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-25deg);
+}
+
+@keyframes shine {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
