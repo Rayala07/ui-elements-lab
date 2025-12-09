@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(37, 37, 37);
+}
+
+.btn-icon {
+  font-size: 1.3rem;
+}
+
+.btn {
+  padding: 1.4rem 1.3rem;
+  background-color: rgb(21, 21, 21);
+  color: whitesmoke;
+  box-shadow: 0 0 0 transparent;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  /* transition: all 1s ease; */
+  position: relative;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: -0.16rem;
+  border-radius: inherit;
+  background: radial-gradient(65rem, rgba(255, 255, 255, 0), white, transparent);
+}
