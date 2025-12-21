@@ -17,6 +17,6 @@ This repo is simply my creative playground to learn, experiment, and grow as a f
 
 ---
 
-Connect with me on **(X)[https://x.com/ReyZox_07]**
+Connect with me on **X** - https://x.com/ReyZox_07
 
 Made with ❤️ by Viswanath
